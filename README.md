@@ -29,3 +29,5 @@ Note that Windows users should download a tool like [Git Bash](https://git-scm.c
 Sample URL : `otpauth://totp/issuer:your.name@example.com?secret=your-secret-here&prefix=the-prefix-to-use`
 
 Sample Code generated for `otpauth://totp/issuer:your.name@example.com?secret=123123123123123123123123&prefix=GITHUB` will be : `GITHUB568256`
+
+You may use https://www.qr-code-generator.com/ to generate the QR code from the `optauth link`
