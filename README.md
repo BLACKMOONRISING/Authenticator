@@ -24,3 +24,7 @@ Note that Windows users should download a tool like [Git Bash](https://git-scm.c
 - Go to: [Chrome Extensions](chrome://extensions/) drag and drop the `chrome` folder created from the above command
 - Add your CODE manually or scanning a QR code as usual
 - Verify your OTP is working fine by copying the code visible as usual :)
+
+Sample URL : `otpauth://totp/issuer:your.name@example.com?secret=your-secret-here&prefix=the-prefix-to-use`
+
+Sample Code generated for `otpauth://totp/issuer:your.name@example.com?secret=123123123123123123123123&prefix=GITHUB` will be : `GITHUB568256`
