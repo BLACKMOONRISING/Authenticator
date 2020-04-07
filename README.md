@@ -16,3 +16,11 @@ npm run [chrome, firefox]
 ```
 
 Note that Windows users should download a tool like [Git Bash](https://git-scm.com/download/win) or [Cygwin](http://cygwin.com/) to build.
+
+> `Prefix` support is added for Google Chrome
+
+## To install on Google Chrome for prefix supported mode ( for dev )
+- Copy the output folder `chrome` to a safe location (not to be deleted)
+- Go to: [Chrome Extensions](chrome://extensions/) drag and drop the `chrome` folder created from the above command
+- Add your CODE manually or scanning a QR code as usual
+- Verify your OTP is working fine by copying the code visible as usual :)

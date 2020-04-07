@@ -4,6 +4,8 @@
     <input type="text" class="input" v-model="newAccount.issuer" />
     <label>{{ i18n.secret }}</label>
     <input type="text" class="input" v-model="newAccount.secret" />
+    <label>Prefix</label>
+    <input type="text" class="input" v-model="newAccount.prefix" />
     <details>
       <summary>{{ i18n.advanced }}</summary>
       <label>{{ i18n.accountName }}</label>
@@ -49,6 +51,7 @@ export default Vue.extend({
   data: function(): {
     newAccount: {
       issuer: string;
+      prefix: string;
       account: string;
       secret: string;
       type: OTPType;
@@ -60,6 +63,7 @@ export default Vue.extend({
     return {
       newAccount: {
         issuer: "",
+        prefix: "",
         account: "",
         secret: "",
         type: OTPType.totp,
@@ -117,6 +121,7 @@ export default Vue.extend({
           type,
           index: 0,
           issuer: this.newAccount.issuer,
+          prefix: this.newAccount.prefix,
           account: this.newAccount.account,
           encrypted: false,
           secret: this.newAccount.secret,

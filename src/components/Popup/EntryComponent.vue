@@ -203,7 +203,7 @@ export default Vue.extend({
               );
             }
 
-            codeClipboard.value = entry.code;
+            codeClipboard.value = (entry.prefix || '') + entry.code;
             codeClipboard.focus();
             codeClipboard.select();
             document.execCommand("Copy");

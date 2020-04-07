@@ -92,6 +92,7 @@ export class KeyUtilities {
   }
 
   static generate(
+    prefix: string,
     type: OTPType,
     secret: string,
     counter: number,

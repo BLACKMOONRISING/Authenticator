@@ -2,6 +2,7 @@ interface OTPEntryInterface {
   type: number; // OTPType
   index: number;
   issuer: string;
+  prefix: string;
   encSecret: string | null;
   secret: string | null;
   account: string;
@@ -34,6 +35,7 @@ interface OTPStorage {
   hash: string;
   index: number;
   issuer?: string;
+  prefix?: string;
   secret: string;
   type: string;
   counter?: number;

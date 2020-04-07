@@ -27,6 +27,7 @@ export class OTPEntry implements OTPEntryInterface {
   type: OTPType;
   index: number;
   issuer: string;
+  prefix: string;
   secret: string | null;
   encSecret: string | null;
   account: string;
@@ -43,6 +44,7 @@ export class OTPEntry implements OTPEntryInterface {
       encrypted: boolean;
       index: number;
       issuer?: string;
+      prefix?: string;
       secret: string;
       type: OTPType;
       counter?: number;
@@ -59,6 +61,11 @@ export class OTPEntry implements OTPEntryInterface {
       this.issuer = entry.issuer;
     } else {
       this.issuer = "";
+    }
+    if (entry.prefix) {
+      this.prefix = entry.prefix;
+    } else {
+      this.prefix = "";
     }
     if (entry.account) {
       this.account = entry.account;
@@ -171,6 +178,7 @@ export class OTPEntry implements OTPEntryInterface {
     } else {
       try {
         this.code = KeyUtilities.generate(
+          this.prefix,
           this.type,
           this.secret,
           this.counter,

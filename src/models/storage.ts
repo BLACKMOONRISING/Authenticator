@@ -184,6 +184,10 @@ export class EntryStorage {
       storageItem.issuer = entry.issuer;
     }
 
+    if (entry.prefix) {
+      storageItem.prefix = entry.prefix;
+    }
+
     if (entry.account) {
       storageItem.account = entry.account;
     }
@@ -324,6 +328,10 @@ export class EntryStorage {
                 delete _data[hash].issuer;
               }
 
+              if (!_data[hash].prefix) {
+                delete _data[hash].prefix;
+              }
+
               if (!_data[hash].account) {
                 delete _data[hash].account;
               }
@@ -386,6 +394,7 @@ export class EntryStorage {
               data[hash].encrypted = encryption.getEncryptionStatus();
               data[hash].index = data[hash].index || 0;
               data[hash].issuer = data[hash].issuer || "";
+              data[hash].prefix = data[hash].prefix || "";
               data[hash].type = data[hash].type || OTPType[OTPType.totp];
               data[hash].counter = data[hash].counter || 0;
               data[hash].digits = data[hash].digits || 6;
@@ -592,6 +601,7 @@ export class EntryStorage {
                 hash: entryData.hash,
                 index: entryData.index,
                 issuer: entryData.issuer,
+                prefix: entryData.prefix,
                 secret: entryData.secret,
                 type,
                 counter: entryData.counter,

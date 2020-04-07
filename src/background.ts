@@ -130,6 +130,7 @@ async function getTotp(text: string) {
       let secret = "";
       let account: string | undefined;
       let issuer: string | undefined;
+      let prefix: string | undefined;
       let algorithm: string | undefined;
       let period: number | undefined;
       let digits: number | undefined;
@@ -148,6 +149,9 @@ async function getTotp(text: string) {
       const parameters = parameterPart.split("&");
       parameters.forEach(item => {
         const parameter = item.split("=");
+        if (parameter[0].toLowerCase() === "prefix") {
+          prefix = parameter[1];
+        }
         if (parameter[0].toLowerCase() === "secret") {
           secret = parameter[1];
         } else if (parameter[0].toLowerCase() === "issuer") {
@@ -202,6 +206,7 @@ async function getTotp(text: string) {
           account,
           hash,
           issuer,
+          prefix,
           secret,
           type,
           encrypted: false,

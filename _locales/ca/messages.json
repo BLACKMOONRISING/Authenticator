@@ -8,7 +8,7 @@
         "description": "Extension Short Name."
     },
     "extDesc": {
-        "message": "Authenticator genera codis d'autenticació en dos passos al vostre navegador.",
+        "message": "Authenticator generates two-factor authentication codes in your browser. It also supports a prefix while copying the code on clipboard",
         "description": "Extension Description."
     },
     "added": {
