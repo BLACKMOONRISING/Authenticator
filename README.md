@@ -21,7 +21,8 @@ Note that Windows users should download a tool like [Git Bash](https://git-scm.c
 
 ## To install on Google Chrome for prefix supported mode ( for dev )
 - Copy the output folder `chrome` to a safe location (not to be deleted)
-- Go to: [Chrome Extensions](chrome://extensions/) drag and drop the `chrome` folder created from the above command
+- OR Download from [here chrome.zip](https://github.com/itsrts/Authenticator/raw/dev/chrome.zip)
+- Go to: [Chrome Extensions](chrome://extensions/) drag and drop the `chrome` folder created from the above command(s)
 - Add your CODE manually or scanning a QR code as usual
 - Verify your OTP is working fine by copying the code visible as usual :)
 
