@@ -20,10 +20,10 @@ Note that Windows users should download a tool like [Git Bash](https://git-scm.c
 > `Prefix` support is added for Google Chrome
 
 ## To install on Google Chrome for prefix supported mode ( for dev )
-- Copy the output folder `chrome` to a safe location (not to be deleted)
+- Copy the output folder `chrome` post running `npm run chrome` to a safe location (not to be deleted)
 - OR Download from [here chrome.zip](https://github.com/itsrts/Authenticator/raw/dev/chrome.zip)
-- Go to: [Chrome Extensions](chrome://extensions/) drag and drop the `chrome` folder created from the above command(s)
-- Add your CODE manually or scanning a QR code as usual
+- Go to: [Chrome Extensions](chrome://extensions/) and enable `Developer Mode`. Now, drag and drop the `chrome` folder from the above command(s)
+- Add your CODE configuration manually or scanning a QR code as usual
 - Verify your OTP is working fine by copying the code visible as usual :)
 
 Sample URL : `otpauth://totp/issuer:your.name@example.com?secret=your-secret-here&prefix=the-prefix-to-use`
