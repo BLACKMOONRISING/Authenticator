@@ -8,7 +8,7 @@
         "description": "Extension Short Name."
     },
     "extDesc": {
-        "message": "Authenticator generates two-factor authentication codes in your browser. It also supports a prefix while copying the code on clipboard",
+        "message": "Authenticator generates two-factor authentication codes in your browser, prefix support added.",
         "description": "Extension Description."
     },
     "added": {
