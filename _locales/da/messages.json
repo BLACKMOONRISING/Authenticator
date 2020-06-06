@@ -1,10 +1,10 @@
 {
     "extName": {
-        "message": "Autentificering",
+        "message": "Autentificering-præfiks",
         "description": "Extension Name."
     },
     "extShortName": {
-        "message": "Autentificering",
+        "message": "Autentificering-Prefix",
         "description": "Extension Short Name."
     },
     "extDesc": {

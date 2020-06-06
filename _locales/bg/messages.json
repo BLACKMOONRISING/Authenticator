@@ -1,10 +1,10 @@
 {
     "extName": {
-        "message": "Удостоверител",
+        "message": "Удостоверител-прыстаўка",
         "description": "Extension Name."
     },
     "extShortName": {
-        "message": "Удостоверител",
+        "message": "Удостоверител-Prefix",
         "description": "Extension Short Name."
     },
     "extDesc": {
